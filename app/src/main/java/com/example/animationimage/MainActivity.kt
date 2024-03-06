@@ -20,11 +20,18 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        pornima()
     }
+
+    private fun pornima() {
+        TODO("Not yet implemented")
+    }
+
     fun onImageClick(view: View) {
         selectedImage = view as ImageView
         selectedBox = findViewById(R.id.saveBox)
         animateImageToBox(selectedImage)
+
     }
 
     fun animateImageToBox(image: ImageView?) {
